@@ -1,93 +1,692 @@
-<!DOCTYPE html><html lang="es"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Reductores Cuyo - Ingeniería de Precisión Industrial en Mendoza, Argentina</title>
-<meta name="description" content="Fabricación, reparación y mantenimiento de reductores. Ingeniería de precisión industrial en Mendoza, Argentina."/>
-<link rel="icon" href="data:,"><script src="https://cdn.tailwindcss.com"></script>
-</head><body class="bg-gray-50 text-gray-800">
-<header class="sticky top-0 bg-white/80 backdrop-blur border-b">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between">
-    <div class="font-semibold">Reductores Cuyo</div>
-    <nav class="flex gap-4 text-sm">
-      <a href="#servicios">Servicios</a><a href="#industrias">Industrias</a><a href="#contacto">Contacto</a>
-      <button id="lang" class="px-3 py-1 border rounded-full text-xs">ES / EN</button>
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reductores Cuyo - Ingeniería de Precisión Industrial en Mendoza</title>
+  <meta name="description" content="Reductores Cuyo: fabricación y reparación de reductores industriales. Ingeniería de precisión para minería, petróleo, cemento e industria pesada." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="alternate" href="/?lang=es" hreflang="es" />
+  <link rel="alternate" href="/?lang=en" hreflang="en" />
+  <link rel="alternate" href="/" hreflang="x-default" />
+  <meta property="og:title" content="Reductores Cuyo - Ingeniería de Precisión Industrial" />
+  <meta property="og:description" content="Fabricación y reparación de reductores industriales en Mendoza, Argentina. Consultá por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://placehold.co/1200x630/111827/f9fafb?text=Reductores+Cuyo" />
 
-<section class="max-w-6xl mx-auto px-4 py-16">
-  <h1 id="t-hero" class="text-3xl md:text-5xl font-bold">Ingeniería de Precisión Industrial</h1>
-  <p id="p-hero" class="mt-4 text-lg text-gray-700 max-w-2xl">
-    Fabricación, reparación y mantenimiento de reductores y trenes de engranajes. Mendoza · Argentina.
-  </p>
-  <div class="mt-6 flex gap-3">
-    <a href="#contacto" class="px-5 py-3 rounded-xl bg-red-600 text-white font-medium">Solicitar cotización</a>
-    <a href="https://wa.me/###########" class="px-5 py-3 rounded-xl border font-medium">WhatsApp</a>
-  </div>
-</section>
-
-<section id="servicios" class="max-w-6xl mx-auto px-4 pb-12">
-  <h2 id="t-serv" class="text-2xl md:text-3xl font-semibold">Servicios</h2>
-  <div class="grid md:grid-cols-3 gap-6 mt-6">
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold" id="s1">Fabricación y mecanizado</h3>
-      <p class="text-sm text-gray-600" id="s1d">Engranajes cilíndricos, cónicos y sinfín; ejes, coronas y carcasas.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold" id="s2">Reparación integral</h3>
-      <p class="text-sm text-gray-600" id="s2d">Diagnóstico, rectificado, reemplazo de rodamientos y sellos.</p>
-    </div>
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="font-semibold" id="s3">Mantenimiento preventivo</h3>
-      <p class="text-sm text-gray-600" id="s3d">Planificaciones, lubricación, control de vibraciones y temperatura.</p>
-    </div>
-  </div>
-</section>
-
-<section id="industrias" class="max-w-6xl mx-auto px-4 pb-16">
-  <h2 id="t-ind" class="text-2xl md:text-3xl font-semibold">Industrias</h2>
-  <ul class="grid md:grid-cols-4 gap-4 mt-6 text-sm">
-    <li class="p-4 bg-white rounded-xl shadow">Vitivinícola</li>
-    <li class="p-4 bg-white rounded-xl shadow">Alimentos y bebidas</li>
-    <li class="p-4 bg-white rounded-xl shadow">Oil &amp; Gas</li>
-    <li class="p-4 bg-white rounded-xl shadow">Minería</li>
-  </ul>
-</section>
-
-<section id="contacto" class="bg-gray-100">
-  <div class="max-w-6xl mx-auto px-4 py-16">
-    <h2 id="t-cta" class="text-2xl md:text-3xl font-semibold">Contacto</h2>
-    <p class="text-sm text-gray-700 mt-2" id="p-cta">Contanos tu necesidad técnica y te respondemos en el día.</p>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <a href="mailto:contacto@tudominio.com" class="p-5 bg-white rounded-2xl shadow block">
-        <div class="font-semibold">Email</div><div class="text-sm text-gray-600">contacto@tudominio.com</div>
-      </a>
-      <a href="https://wa.me/###########" class="p-5 bg-white rounded-2xl shadow block">
-        <div class="font-semibold">WhatsApp</div><div class="text-sm text-gray-600">+54 9 ##########</div>
-      </a>
-      <div class="p-5 bg-white rounded-2xl shadow">
-        <div class="font-semibold">Ubicación</div><div class="text-sm text-gray-600">Mendoza · Argentina</div>
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+    .color-primary { color: #b91c1c; }
+    .bg-primary { background-color: #b91c1c; }
+    .hover-bg-primary:hover { background-color: #b91c1c; }
+    .color-dark { color: #111827; }
+    .bg-dark { background-color: #111827; }
+    .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 50; }
+    .nav-link:hover { color: #b91c1c; }
+  </style>
+</head>
+<body class="text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-dark text-gray-50 sticky top-0 z-40 shadow-xl">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="#inicio" class="text-2xl font-extrabold tracking-tight color-primary">Reductores Cuyo</a>
+      <nav class="hidden lg:flex space-x-8 text-sm font-medium">
+        <a id="nav-inicio" href="#inicio" class="nav-link transition duration-300 hover:text-red-600">Inicio</a>
+        <a id="nav-quienes" href="#quienes-somos" class="nav-link transition duration-300 hover:text-red-600">Quiénes Somos</a>
+        <a id="nav-productos" href="#productos" class="nav-link transition duration-300 hover:text-red-600">Productos</a>
+        <a id="nav-servicios" href="#servicios" class="nav-link transition duration-300 hover:text-red-600">Servicios</a>
+        <a id="nav-ia" href="#calculadora-ia" class="nav-link transition duration-300 hover:text-red-600">IA Técnica ✨</a>
+        <a id="nav-casos" href="#casos-exito" class="nav-link transition duration-300 hover:text-red-600">Casos de Éxito</a>
+        <a id="nav-contacto" href="#contacto" class="nav-link transition duration-300 hover:text-red-600">Contacto</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3">
+        <button id="lang-es" class="text-xs px-2 py-1 rounded border border-gray-600 hover:border-white">ES</button>
+        <button id="lang-en" class="text-xs px-2 py-1 rounded border border-gray-600 hover:border-white">EN</button>
+        <a href="https://wa.me/5492615177222" target="_blank" class="flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-lg shadow-green-500/50">
+          <i data-lucide="message-square-text" class="w-5 h-5 mr-2"></i>
+          <span id="nav-whatsapp">WhatsApp</span>
+        </a>
       </div>
+      <button id="menu-button" class="lg:hidden p-2 rounded-lg bg-gray-800 hover:bg-gray-700">
+        <i data-lucide="menu" class="w-6 h-6 text-gray-50"></i>
+      </button>
     </div>
-  </div>
-</section>
+    <nav id="mobile-menu" class="hidden lg:hidden flex-col space-y-2 p-4 bg-gray-800 text-white text-center">
+      <div class="flex justify-center gap-3 mb-2">
+        <button id="lang-es-m" class="text-xs px-2 py-1 rounded border border-gray-600 hover:border-white">ES</button>
+        <button id="lang-en-m" class="text-xs px-2 py-1 rounded border border-gray-600 hover:border-white">EN</button>
+      </div>
+      <a id="nav-inicio-m" href="#inicio" class="nav-link block py-2 rounded-md hover:bg-gray-700">Inicio</a>
+      <a id="nav-quienes-m" href="#quienes-somos" class="nav-link block py-2 rounded-md hover:bg-gray-700">Quiénes Somos</a>
+      <a id="nav-productos-m" href="#productos" class="nav-link block py-2 rounded-md hover:bg-gray-700">Productos</a>
+      <a id="nav-servicios-m" href="#servicios" class="nav-link block py-2 rounded-md hover:bg-gray-700">Servicios</a>
+      <a id="nav-ia-m" href="#calculadora-ia" class="nav-link block py-2 rounded-md hover:bg-gray-700">IA Técnica ✨</a>
+      <a id="nav-casos-m" href="#casos-exito" class="nav-link block py-2 rounded-md hover:bg-gray-700">Casos de Éxito</a>
+      <a id="nav-contacto-m" href="#contacto" class="nav-link block py-2 rounded-md hover:bg-gray-700">Contacto</a>
+      <a href="https://wa.me/5492615177222" target="_blank" class="mt-4 flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md">
+        <i data-lucide="message-square-text" class="w-5 h-5 mr-2"></i>
+        <span id="nav-whatsapp-m">WhatsApp</span>
+      </a>
+    </nav>
+  </header>
 
-<footer class="border-t">
-  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex justify-between">
-    <span>© Reductores Cuyo · Mendoza · Argentina</span><span>Desarrollado por CR Digital</span>
-  </div>
-</footer>
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="pt-24 pb-16 bg-dark text-gray-50 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-cover bg-center" style="background-image:url('https://placehold.co/1920x1080/111827/f9fafb?text=Taller+Industrial');"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span id="hero-badge" class="text-sm font-semibold tracking-widest uppercase text-red-500 border border-red-500 px-3 py-1 rounded-full inline-block">Mendoza, Argentina</span>
+          <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold leading-tight text-white">Fabricación y reparación de <span class="color-primary">reductores industriales</span>.</h1>
+          <p id="hero-sub" class="text-xl text-gray-300 font-light">Ingeniería de precisión para minería, petróleo, cemento e industria pesada.</p>
+          <a href="https://wa.me/5492615177222" target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg shadow-xl shadow-green-500/50 transform hover:scale-105">
+            <i data-lucide="message-square-text" class="w-6 h-6 mr-3"></i>
+            <span id="hero-cta">Consultar Ahora por WhatsApp</span>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-red-700/50">
+            <img src="https://placehold.co/600x400/374151/f9fafb?text=Engranaje+de+Precision" alt="Engranaje de precisión" class="w-full h-auto object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-const dict={es:{hero:"Ingeniería de Precisión Industrial",phero:"Fabricación, reparación y mantenimiento de reductores y trenes de engranajes. Mendoza · Argentina.",serv:"Servicios",s1:"Fabricación y mecanizado",s1d:"Engranajes cilíndricos, cónicos y sinfín; ejes, coronas y carcasas.",s2:"Reparación integral",s2d:"Diagnóstico, rectificado, reemplazo de rodamientos y sellos.",s3:"Mantenimiento preventivo",s3d:"Planificaciones, lubricación, control de vibraciones y temperatura.",ind:"Industrias",cta:"Contacto",pcta:"Contanos tu necesidad técnica y te respondemos en el día."},
-en:{hero:"Industrial Precision Engineering",phero:"Manufacturing, repair and maintenance of gearboxes and gear trains. Mendoza · Argentina.",serv:"Services",s1:"Manufacturing & machining",s1d:"Spur, bevel and worm gears; shafts, crowns and housings.",s2:"Full repair",s2d:"Diagnostics, grinding, bearings and seals replacement.",s3:"Preventive maintenance",s3d:"Plans, lubrication, vibration and temperature control.",ind:"Industries",cta:"Contact",pcta:"Tell us your technical need and we’ll reply the same day."}};
-const setLang=l=>{const t=dict[l];if(!t)return;["t-hero","p-hero","t-serv","s1","s1d","s2","s2d","s3","s3d","t-ind","t-cta","p-cta"].forEach(()=>{});document.getElementById('t-hero').textContent=t.hero;
-document.getElementById('p-hero').textContent=t.phero;document.getElementById('t-serv').textContent=t.serv;
-document.getElementById('s1').textContent=t.s1;document.getElementById('s1d').textContent=t.s1d;
-document.getElementById('s2').textContent=t.s2;document.getElementById('s2d').textContent=t.s2d;
-document.getElementById('s3').textContent=t.s3;document.getElementById('s3d').textContent=t.s3d;
-document.getElementById('t-ind').textContent=t.ind;document.getElementById('t-cta').textContent=t.cta;
-document.getElementById('p-cta').textContent=t.pcta;localStorage.setItem('lang',l)};
-document.getElementById('lang').onclick=()=>setLang(localStorage.getItem('lang')==='en'?'es':'en');
-setLang(localStorage.getItem('lang')||'es');
-</script>
-</body></html>
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-quienes" class="text-4xl font-extrabold text-center mb-12 color-dark border-b-4 border-red-700 inline-block pb-1">Quiénes Somos</h2>
+        <div class="grid lg:grid-cols-3 gap-10 items-center">
+          <div class="lg:col-span-2 space-y-6">
+            <p class="text-lg font-semibold color-primary">Más de 70 años de liderazgo y calidad.</p>
+            <p class="text-gray-700 text-xl leading-relaxed"><strong>Reductores Cuyo</strong> es una empresa familiar fundada en <strong>1951</strong> en Mendoza, Argentina. Nuestra trayectoria de más de siete décadas se centra en el diseño, la fabricación y la reparación integral de reductores industriales.</p>
+            <p class="text-gray-600">A lo largo de los años, nos hemos consolidado como referentes en la provisión de soluciones de ingeniería de alta precisión, esenciales para los sectores más demandantes de la industria pesada, incluyendo minería, petróleo, cementeras y grandes proyectos de infraestructura. Nuestro compromiso es garantizar la máxima eficiencia y durabilidad en cada componente.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 lg:col-span-1">
+            <img src="https://placehold.co/300x200/d1d5db/374151?text=Taller+RC" alt="Taller de mecanizado Reductores Cuyo" class="rounded-lg shadow-lg transform hover:scale-105 transition duration-300 object-cover" />
+            <img src="https://placehold.co/300x200/d1d5db/374151?text=Equipo+RC" alt="Equipo de ingenieros" class="rounded-lg shadow-lg transform hover:scale-105 transition duration-300 object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-20 bg-gray-200">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-productos" class="text-4xl font-extrabold text-center mb-6 color-dark">Catálogo de Reductores</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Nuestra línea de productos está diseñada para soportar las condiciones operativas más exigentes, ofreciendo torque superior y confiabilidad garantizada.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Producto 1 -->
+          <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-4 border-red-700">
+            <img src="https://placehold.co/600x300/f3f4f6/111827?text=Reductor+RC-H" alt="Reductor helicoidal" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold color-dark mb-3">Reductor helicoidal RC-H Serie 1</h3>
+              <div class="flex justify-between items-center text-sm mb-4 bg-gray-100 p-3 rounded-lg">
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="gauge" class="w-4 h-4 mr-2 text-red-600"></i> Torque: 320 Nm</span>
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="git-fork" class="w-4 h-4 mr-2 text-red-600"></i> Relación: 20:1</span>
+              </div>
+              <a href="https://wa.me/5492615177222?text=Consulta%20por%20Reductor%20helicoidal%20RC-H%20Serie%201" target="_blank" class="w-full flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300 shadow-md">
+                <i data-lucide="message-square-text" class="w-5 h-5 mr-2"></i> Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+          <!-- Producto 2 -->
+          <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-4 border-red-700">
+            <img src="https://placehold.co/600x300/f3f4f6/111827?text=Sinf%C3%ADn-corona+RC-SC" alt="Reductor sinfín-corona" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold color-dark mb-3">Sinfín-corona RC-SC 90</h3>
+              <div class="flex justify-between items-center text-sm mb-4 bg-gray-100 p-3 rounded-lg">
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="gauge" class="w-4 h-4 mr-2 text-red-600"></i> Torque: 450 Nm</span>
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="git-fork" class="w-4 h-4 mr-2 text-red-600"></i> Relación: 40:1</span>
+              </div>
+              <a href="https://wa.me/5492615177222?text=Consulta%20por%20Sinf%C3%ADn-corona%20RC-SC%2090" target="_blank" class="w-full flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300 shadow-md">
+                <i data-lucide="message-square-text" class="w-5 h-5 mr-2"></i> Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+          <!-- Producto 3 -->
+          <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-4 border-red-700">
+            <img src="https://placehold.co/600x300/f3f4f6/111827?text=Pi%C3%B1%C3%B3n+y+Corona+RC-P" alt="Piñón y corona templados" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold color-dark mb-3">Piñón y corona templados RC-P</h3>
+              <div class="flex justify-between items-center text-sm mb-4 bg-gray-100 p-3 rounded-lg">
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="gauge" class="w-4 h-4 mr-2 text-red-600"></i> Torque: 800 Nm+</span>
+                <span class="font-medium text-gray-700 flex items-center"><i data-lucide="settings-2" class="w-4 h-4 mr-2 text-red-600"></i> Relación: Personalizada</span>
+              </div>
+              <a href="https://wa.me/5492615177222?text=Consulta%20por%20Pi%C3%B1%C3%B3n%20y%20corona%20templados%20RC-P" target="_blank" class="w-full flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300 shadow-md">
+                <i data-lucide="message-square-text" class="w-5 h-5 mr-2"></i> Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-servicios" class="text-4xl font-extrabold text-center mb-12 color-dark border-b-4 border-red-700 inline-block pb-1">Nuestros Servicios</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-700 hover:shadow-xl transition duration-300">
+            <i data-lucide="cog" class="w-10 h-10 color-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3 color-dark">Fresado de Engranajes</h3>
+            <p class="text-gray-600">Especializados en la fabricación y fresado de engranajes rectos y helicoidales con máxima precisión y las tolerancias más estrictas del mercado.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-700 hover:shadow-xl transition duración-300">
+            <i data-lucide="wrench" class="w-10 h-10 color-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3 color-dark">Mecanizados y Reparaciones</h3>
+            <p class="text-gray-600">Servicio integral de mecanizados de precisión, rectificado y reparación de reductores y componentes industriales para restablecer su rendimiento original.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-700 hover:shadow-xl transition duration-300">
+            <i data-lucide="book-open-check" class="w-10 h-10 color-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-3 color-dark">Asesoramiento Técnico</h3>
+            <p class="text-gray-600">Brindamos soporte de ingeniería especializado y disponemos de stock de repuestos inmediatos para minimizar los tiempos de inactividad de tu planta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculadora IA -->
+    <section id="calculadora-ia" class="py-20 bg-dark text-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-ia" class="text-4xl font-extrabold text-center mb-6 text-white border-b-4 border-red-700 inline-block pb-1">Asistente de Ingeniería IA ✨</h2>
+        <p class="text-center text-gray-400 mb-12 max-w-3xl mx-auto">Utiliza nuestro asistente para generar una especificación técnica preliminar. <span class="font-semibold text-red-400">Nota:</span> en producción se usa una función serverless para proteger la API key.</p>
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="bg-gray-800 p-8 rounded-xl shadow-2xl">
+            <h3 class="text-2xl font-bold text-red-500 mb-6">Parámetros de Aplicación</h3>
+            <form id="specs-form" class="space-y-4">
+              <div>
+                <label for="ia-industria" class="block text-sm font-medium text-gray-300 mb-1">Industria</label>
+                <input type="text" id="ia-industria" value="Minería" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500" />
+              </div>
+              <div>
+                <label for="ia-aplicacion" class="block text-sm font-medium text-gray-300 mb-1">Aplicación (Ej: Cinta transportadora, molino)</label>
+                <input type="text" id="ia-aplicacion" value="Elevador de cangilones" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500" />
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="ia-potencia" class="block text-sm font-medium text-gray-300 mb-1">Potencia Requerida (kW/HP)</label>
+                  <input type="text" id="ia-potencia" value="15 kW" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500" />
+                </div>
+                <div>
+                  <label for="ia-servicio" class="block text sm font-medium text-gray-300 mb-1">Tipo de Servicio</label>
+                  <select id="ia-servicio" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500">
+                    <option value="Continuo">Continuo (24h/día)</option>
+                    <option value="Intermitente">Intermitente (8h/día)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="ia-velocidad-entrada" class="block text-sm font-medium text-gray-300 mb-1">Velocidad de Entrada (RPM)</label>
+                  <input type="number" id="ia-velocidad-entrada" value="1450" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500" />
+                </div>
+                <div>
+                  <label for="ia-velocidad-salida" class="block text-sm font-medium text-gray-300 mb-1">Velocidad de Salida (RPM)</label>
+                  <input type="number" id="ia-velocidad-salida" value="30" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-red-500 focus:border-red-500" />
+                </div>
+              </div>
+              <button type="submit" class="w-full flex justify-center items-center bg-red-700 hover:bg-red-800 text-white font-bold py-3 mt-6 rounded-lg transition duration-300 shadow-lg shadow-red-700/40 transform hover:scale-[1.01]">
+                <i data-lucide="sparkles" class="w-5 h-5 mr-3"></i> Generar Especificación IA
+              </button>
+            </form>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-2xl relative">
+            <h3 class="text-2xl font-bold color-dark mb-6 flex items-center">Resultado de Ingeniería <i data-lucide="lightbulb" class="w-6 h-6 ml-2 text-red-700"></i></h3>
+            <div id="ia-loading" class="hidden text-center py-12">
+              <i data-lucide="loader-2" class="w-8 h-8 mx-auto animate-spin color-primary"></i>
+              <p class="text-gray-600 mt-4">Analizando requisitos y generando borrador...</p>
+            </div>
+            <div id="ia-specs-output" class="hidden space-y-4">
+              <div id="specs-content" class="text-gray-800 text-sm p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                <p class="text-gray-500 italic">Introduce tus parámetros y pulsa "Generar Especificación IA" para obtener un borrador técnico.</p>
+              </div>
+              <div id="api-status" class="text-xs text-center text-gray-400"></div>
+              <button id="whatsapp-specs-button" class="w-full flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300 shadow-md transform hover:scale-[1.01]">
+                <i data-lucide="message-square-text" class="w-5 h-5 mr-3"></i> Enviar a Reductores Cuyo por WhatsApp
+              </button>
+              <p class="text-xs text-center text-gray-500 mt-2">Nota: Especificación preliminar. El diseño final requiere validación de nuestros ingenieros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos de Éxito -->
+    <section id="casos-exito" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-casos" class="text-4xl font-extrabold text-center mb-12 color-dark border-b-4 border-red-700 inline-block pb-1">Casos de Éxito</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-red-700 hover:shadow-2xl transition duration-300">
+            <span class="text-2xl font-bold color-primary block mb-2">#01</span>
+            <h3 class="text-2xl font-semibold mb-3 color-dark">Dique San Luis</h3>
+            <p class="text-gray-600">Diseño y fabricación de un sistema de accionamiento de alta torsión para las compuertas principales. Solución robusta que garantiza la operación hidráulica crítica.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-red-700 hover:shadow-2xl transition duration-300">
+            <span class="text-2xl font-bold color-primary block mb-2">#02</span>
+            <h3 class="text-2xl font-semibold mb-3 color-dark">Cementera Mendoza</h3>
+            <p class="text-gray-600">Reparación urgente y overhaul completo de un gran reductor helicoidal. Extensión de la vida útil del equipo central, minimizando la parada de producción.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-red-700 hover:shadow-2xl transition duration-300">
+            <span class="text-2xl font-bold color-primary block mb-2">#03</span>
+            <h3 class="text-2xl font-semibold mb-3 color-dark">Cortadora Industrial</h3>
+            <p class="text-gray-600">Modificación y potenciación del sistema de transmisión en una cortadora industrial para aumentar la velocidad y precisión del corte final.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-200">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="h-contacto" class="text-4xl font-extrabold text-center mb-12 color-dark border-b-4 border-red-700 inline-block pb-1">Contacto Directo</h2>
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-xl shadow-xl space-y-6">
+            <h3 class="text-2xl font-bold color-primary mb-4">Información de Contacto</h3>
+            <div class="flex items-start space-x-4">
+              <i data-lucide="map-pin" class="w-6 h-6 color-dark flex-shrink-0 mt-1"></i>
+              <div>
+                <p class="font-semibold color-dark">Dirección:</p>
+                <p class="text-gray-600">Ceretti 248/250, Godoy Cruz, Mendoza.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <i data-lucide="phone" class="w-6 h-6 color-dark flex-shrink-0 mt-1"></i>
+              <div>
+                <p class="font-semibold color-dark">WhatsApp:</p>
+                <a href="https://wa.me/5492615177222" target="_blank" class="text-green-500 hover:text-green-600 font-medium">+54 9 261 5177222</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <i data-lucide="mail" class="w-6 h-6 color-dark flex-shrink-0 mt-1"></i>
+              <div>
+                <p class="font-semibold color-dark">Email:</p>
+                <a href="mailto:reductorescuyo@gmail.com" class="text-gray-700 hover:text-red-700 font-medium">reductorescuyo@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <i data-lucide="clock" class="w-6 h-6 color-dark flex-shrink-0 mt-1"></i>
+              <div>
+                <p class="font-semibold color-dark">Horario de Atención:</p>
+                <p class="text-gray-600">Lunes a Viernes de 8:00 a 18:00 h.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-xl">
+            <h3 class="text-2xl font-bold color-dark mb-6">Envíanos tu Consulta</h3>
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre y Apellido</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-200" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-200" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje o Consulta</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-200"></textarea>
+              </div>
+              <button type="submit" class="w-full flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300 shadow-lg shadow-green-500/40 transform hover:scale-[1.01]">
+                <i data-lucide="send" class="w-5 h-5 mr-3"></i> Enviar Consulta por WhatsApp
+              </button>
+            </form>
+            <p id="form-feedback" class="mt-4 text-center text-sm text-green-700 font-medium hidden">Mensaje enviado. Te redirigiremos a WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-gray-400 py-6">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+      <p>&copy; <span id="current-year"></span> Reductores Cuyo. Todos los derechos reservados.</p>
+      <p class="mt-1">Sitio desarrollado por <span class="text-red-500 font-semibold">CR Digital</span>.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp (móvil) -->
+  <a href="https://wa.me/5492615177222" target="_blank" class="whatsapp-float lg:hidden bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-2xl transition duration-300 transform hover:scale-110" aria-label="WhatsApp">
+    <i data-lucide="message-square-text" class="w-6 h-6 text-white"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Inicializar íconos
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+    });
+
+    // Menú móvil
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuButton) {
+      menuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+    document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Formulario -> WhatsApp
+    const contactForm = document.getElementById('contact-form');
+    const formFeedback = document.getElementById('form-feedback');
+    const whatsappNumber = '5492615177222';
+    if (contactForm) {
+      const formButton = contactForm.querySelector('button[type="submit"]');
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const whatsappMessage = `Hola, mi nombre es *${name}* y mi email es *${email}*.%0A%0AQuisiera consultarles lo siguiente:%0A"${message}"`;
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+        formButton.disabled = true;
+        formButton.innerHTML = '<i data-lucide="check" class="w-5 h-5 mr-3 animate-pulse"></i> Enviando...';
+        formFeedback.classList.remove('hidden');
+        setTimeout(() => {
+          window.open(whatsappUrl, '_blank');
+          contactForm.reset();
+          formButton.disabled = false;
+          formButton.innerHTML = '<i data-lucide="send" class="w-5 h-5 mr-3"></i> Enviar Consulta por WhatsApp';
+          if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+          formFeedback.classList.add('hidden');
+        }, 800);
+      });
+    }
+
+    // Año footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // ===== Utilidad: Formateo Markdown mínimo a HTML seguro =====
+    function formatMarkdownToHTML(md) {
+      if (typeof md !== 'string') return '';
+      let html = md.replace(/\n/g, '<br>');
+      html = html.replace(/^##\s+(.*?)(?:<br>|$)/gm, '<h4 class="text-xl font-bold color-dark mt-4 mb-2">$1</h4>');
+      html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      html = html.replace(/^\*\s+(.*?)(?:<br>|$)/gm, '<li class="text-gray-700 ml-5 list-disc">$1</li>');
+      return html;
+    }
+
+    // ===== Helpers API =====
+    function ms(n){ return new Promise(r=>setTimeout(r,n)); }
+    async function fetchWithTimeout(url, options={}, timeoutMs=12000){
+      return Promise.race([
+        fetch(url, options),
+        new Promise((_, rej)=>setTimeout(()=>rej(new Error('timeout')), timeoutMs))
+      ]);
+    }
+    async function fetchWithBackoff(url, options={}, maxRetries=2){
+      for(let i=0;i<maxRetries;i++){
+        try{
+          const res = await fetchWithTimeout(url, options);
+          if(res.status===429){ await ms(Math.pow(2,i)*1000 + Math.random()*500); continue; }
+          if(!res.ok) throw new Error('HTTP '+res.status);
+          return res;
+        }catch(e){ if(i===maxRetries-1) throw e; await ms(Math.pow(2,i)*1000 + Math.random()*500); }
+      }
+    }
+
+    // ===== IA Specs: fallback offline si no hay función serverless =====
+    function parseKW(p){
+      // Acepta "15 kW", "20hp", "18 HP" etc.
+      const s = String(p).trim().toLowerCase();
+      const kwMatch = s.match(/([0-9]+(?:\.[0-9]+)?)\s*kw/);
+      const hpMatch = s.match(/([0-9]+(?:\.[0-9]+)?)\s*h?p/);
+      if(kwMatch) return parseFloat(kwMatch[1]);
+      if(hpMatch) return parseFloat(hpMatch[1]) * 0.7457; // 1 HP ≈ 0.7457 kW
+      const num = parseFloat(s.replace(/,/g,'.'));
+      return isNaN(num)? 0 : num; // asume kW si solo número
+    }
+    function estimateTorqueNm(kw, rpmOut, servicio){
+      // T ~ 9550 * kW / rpm (Nm). Factor servicio: continuo 1.3, intermitente 1.0
+      const fs = /continuo/i.test(servicio)? 1.3 : 1.0;
+      if(rpmOut<=0||kw<=0) return 0;
+      return Math.round((9550*kw/rpmOut)*fs);
+    }
+    function buildUserPrompt({industria, aplicacion, potencia, rpmIn, rpmOut, servicio}){
+      return `Necesito un borrador de especificación técnica para un reductor industrial basado en:\n- Industria: ${industria}\n- Aplicación: ${aplicacion}\n- Potencia: ${potencia}\n- RPM entrada: ${rpmIn}\n- RPM salida: ${rpmOut}\n- Servicio: ${servicio}\n\nIncluye: Tipo de reductor sugerido, torque nominal estimado (Nm), factor de servicio recomendado, materiales (carcasa/engranajes) y justificación breve. Formato Markdown.`;
+    }
+    function localGenerateSpecs(params){
+      const { industria, aplicacion, potencia, rpmIn, rpmOut, servicio } = params;
+      const kw = parseKW(potencia);
+      const ratio = rpmOut>0? (rpmIn/rpmOut) : 0;
+      const torque = estimateTorqueNm(kw, rpmOut, servicio);
+      // Heurística simple de tipo de reductor
+      let tipo = 'Helicoidal';
+      if(ratio>60) tipo = 'Planetario';
+      else if(ratio>25) tipo = 'Sinfín-Corona';
+      const materiales = `Carcasa: fundición nodular (EN-GJS-400-15) o acero soldado, Engranajes: acero aleado cementado y templado (16MnCr5/8620), dureza 58-62 HRC.`;
+      const fsTxt = /continuo/i.test(servicio)? '1.3 (servicio continuo)' : '1.0 (servicio intermitente)';
+      return [
+        `## Especificación Preliminar`,
+        `**Industria:** ${industria}  \n**Aplicación:** ${aplicacion}`,
+        `**Tipo de reductor sugerido:** ${tipo}  \n**Relación estimada:** ${ratio? ratio.toFixed(1): '—'}:1`,
+        `**Torque nominal estimado:** ${torque} Nm  \n**Factor de servicio recomendado:** ${fsTxt}`,
+        `**Materiales:** ${materiales}`,
+        `**Notas:** Cálculo preliminar basado en potencia efectiva y RPM de salida. Validar ejes, rodamientos, disipación térmica y montaje.`
+      ].join('\n\n');
+    }
+
+    async function generateTechnicalSpecs() {
+      const outputDiv = document.getElementById('ia-specs-output');
+      const loadingIndicator = document.getElementById('ia-loading');
+      const specsContent = document.getElementById('specs-content');
+      const formButton = document.querySelector('#specs-form button[type="submit"]');
+      const apiStatus = document.getElementById('api-status');
+
+      outputDiv.classList.add('hidden');
+      specsContent.innerHTML = '';
+      apiStatus.textContent = '';
+      loadingIndicator.classList.remove('hidden');
+      formButton.disabled = true;
+      formButton.innerHTML = '<i data-lucide="sparkles" class="w-5 h-5 mr-3 animate-pulse"></i> Generando...';
+      if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+
+      const industria = document.getElementById('ia-industria').value;
+      const aplicacion = document.getElementById('ia-aplicacion').value;
+      const potencia = document.getElementById('ia-potencia').value;
+      const velocidad_entrada = document.getElementById('ia-velocidad-entrada').value;
+      const velocidad_salida = document.getElementById('ia-velocidad-salida').value;
+      const servicio = document.getElementById('ia-servicio').value;
+      const params = { industria, aplicacion, potencia, rpmIn: velocidad_entrada, rpmOut: velocidad_salida, servicio };
+
+      try {
+        // 1) Intento llamar a la función serverless (Netlify)
+        const userQuery = buildUserPrompt(params);
+        const res = await fetchWithBackoff('/.netlify/functions/specs', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ prompt: userQuery })
+        });
+        let text = '';
+        try {
+          const ct = res.headers.get('content-type') || '';
+          if(!ct.includes('application/json')) throw new Error('invalid content-type');
+          const json = await res.json();
+          text = json.text || '';
+        } catch(parseErr){
+          throw new Error('parse-error');
+        }
+        const finalText = text && text.trim().length>0 ? text : localGenerateSpecs(params);
+        const formattedText = formatMarkdownToHTML(finalText);
+        specsContent.innerHTML = `<div class="p-2">${formattedText}</div>`;
+        apiStatus.textContent = 'Origen: función serverless (.netlify/functions/specs)';
+        outputDiv.classList.remove('hidden');
+        if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+      } catch (error) {
+        // 2) Fallback offline determinístico
+        const offline = localGenerateSpecs(params);
+        const formattedText = formatMarkdownToHTML(offline);
+        specsContent.innerHTML = `<div class="p-2">${formattedText}</div>`;
+        apiStatus.textContent = 'Origen: cálculo local (sin conexión a función)';
+        outputDiv.classList.remove('hidden');
+        console.error('IA Error/Fallback:', error);
+      } finally {
+        loadingIndicator.classList.add('hidden');
+        formButton.disabled = false;
+        formButton.innerHTML = '<i data-lucide="sparkles" class="w-5 h-5 mr-3"></i> Generar Especificación IA';
+        if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+      }
+    }
+
+    // ===== Listeners IA + WhatsApp =====
+    document.addEventListener('DOMContentLoaded', () => {
+      const specsForm = document.getElementById('specs-form');
+      if (specsForm) specsForm.addEventListener('submit', (e) => { e.preventDefault(); generateTechnicalSpecs(); });
+      const whatsappSpecsButton = document.getElementById('whatsapp-specs-button');
+      if (whatsappSpecsButton) whatsappSpecsButton.addEventListener('click', () => {
+        const specsContent = document.getElementById('specs-content').innerText;
+        const num = '5492615177222';
+        const msg = `*Consulta generada por Asistente IA de Reductores Cuyo:*\n\n${specsContent}\n\n*Necesito cotización o asesoramiento sobre esta especificación.*`;
+        const encoded = encodeURIComponent(msg);
+        window.open(`https://wa.me/${num}?text=${encoded}`, '_blank');
+      });
+    });
+
+    // ===== i18n (ES/EN) =====
+    const i18n = {
+      es: {
+        'nav.inicio': 'Inicio', 'nav.quienes': 'Quiénes Somos', 'nav.productos': 'Productos', 'nav.servicios': 'Servicios', 'nav.ia': 'IA Técnica ✨', 'nav.casos': 'Casos de Éxito', 'nav.contacto': 'Contacto', 'nav.whatsapp': 'WhatsApp',
+        'hero.title': 'Fabricación y reparación de <span class="color-primary">reductores industriales</span>.',
+        'hero.sub': 'Ingeniería de precisión para minería, petróleo, cemento e industria pesada.',
+        'hero.cta': 'Consultar Ahora por WhatsApp',
+        'h.quienes': 'Quiénes Somos', 'h.productos': 'Catálogo de Reductores', 'h.servicios': 'Nuestros Servicios', 'h.ia': 'Asistente de Ingeniería IA ✨', 'h.casos': 'Casos de Éxito', 'h.contacto': 'Contacto Directo'
+      },
+      en: {
+        'nav.inicio': 'Home', 'nav.quienes': 'About Us', 'nav.productos': 'Products', 'nav.servicios': 'Services', 'nav.ia': 'AI Assistant ✨', 'nav.casos': 'Case Studies', 'nav.contacto': 'Contact', 'nav.whatsapp': 'WhatsApp',
+        'hero.title': 'Manufacturing and repair of <span class="color-primary">industrial gearboxes</span>.',
+        'hero.sub': 'Precision engineering for mining, oil & gas, cement, and heavy industry.',
+        'hero.cta': 'Chat on WhatsApp',
+        'h.quienes': 'About Us', 'h.productos': 'Gearbox Catalog', 'h.servicios': 'Our Services', 'h.ia': 'Engineering AI Assistant ✨', 'h.casos': 'Case Studies', 'h.contacto': 'Direct Contact'
+      }
+    };
+
+    function setLang(lang) {
+      const t = i18n[lang] || i18n.es;
+      document.documentElement.lang = lang;
+      // Navbar desktop
+      document.getElementById('nav-inicio').textContent = t['nav.inicio'];
+      document.getElementById('nav-quienes').textContent = t['nav.quienes'];
+      document.getElementById('nav-productos').textContent = t['nav.productos'];
+      document.getElementById('nav-servicios').textContent = t['nav.servicios'];
+      document.getElementById('nav-ia').textContent = t['nav.ia'];
+      document.getElementById('nav-casos').textContent = t['nav.casos'];
+      document.getElementById('nav-contacto').textContent = t['nav.contacto'];
+      document.getElementById('nav-whatsapp').textContent = t['nav.whatsapp'];
+      // Navbar mobile
+      document.getElementById('nav-inicio-m').textContent = t['nav.inicio'];
+      document.getElementById('nav-quienes-m').textContent = t['nav.quienes'];
+      document.getElementById('nav-productos-m').textContent = t['nav.productos'];
+      document.getElementById('nav-servicios-m').textContent = t['nav.servicios'];
+      document.getElementById('nav-ia-m').textContent = t['nav.ia'];
+      document.getElementById('nav-casos-m').textContent = t['nav.casos'];
+      document.getElementById('nav-contacto-m').textContent = t['nav.contacto'];
+      document.getElementById('nav-whatsapp-m').textContent = t['nav.whatsapp'];
+      // Hero
+      document.getElementById('hero-title').innerHTML = t['hero.title'];
+      document.getElementById('hero-sub').textContent = t['hero.sub'];
+      document.getElementById('hero-cta').textContent = t['hero.cta'];
+      // Headings
+      document.getElementById('h-quienes').textContent = t['h.quienes'];
+      document.getElementById('h-productos').textContent = t['h.productos'];
+      document.getElementById('h-servicios').textContent = t['h.servicios'];
+      document.getElementById('h-ia').textContent = t['h.ia'];
+      document.getElementById('h-casos').textContent = t['h.casos'];
+      document.getElementById('h-contacto').textContent = t['h.contacto'];
+      // Ubicación siempre visible para mercado internacional
+      document.getElementById('hero-badge').textContent = 'Mendoza, Argentina';
+      localStorage.setItem('lang', lang);
+    }
+
+    // Toggle idioma
+    document.getElementById('lang-es')?.addEventListener('click', () => setLang('es'));
+    document.getElementById('lang-en')?.addEventListener('click', () => setLang('en'));
+    document.getElementById('lang-es-m')?.addEventListener('click', () => setLang('es'));
+    document.getElementById('lang-en-m')?.addEventListener('click', () => setLang('en'));
+
+    // Idioma inicial
+    const urlLang = new URLSearchParams(window.location.search).get('lang');
+    const stored = localStorage.getItem('lang');
+    const browser = (navigator.language || 'es').slice(0,2);
+    setLang(urlLang || stored || (browser === 'en' ? 'en' : 'es'));
+
+    // ====== TESTS (unitarios simples en cliente) ======
+    function runFormatTests() {
+      const tests = [
+        { name: 'Salto de línea', input: 'a\nb', expect: '<br>' },
+        { name: 'Heading nivel 2', input: '## Título', expect: '<h4 class="text-xl' },
+        { name: 'Negrita', input: 'Texto **fuerte** aquí', expect: '<strong>fuerte</strong>' },
+        { name: 'Lista simple', input: '* ítem 1\n* ítem 2', expect: '<li' },
+        // Extras
+        { name: 'Sin cambios para texto plano', input: 'texto plano', expect: 'texto plano' },
+        { name: 'Mantiene $1 en texto literal', input: 'precio $1.000', expect: '$1.000' }
+      ];
+      const results = tests.map(t => {
+        const out = formatMarkdownToHTML(t.input);
+        const ok = out.includes(t.expect);
+        console.assert(ok, `Fallo en test: ${t.name} → salida: ${out}`);
+        return { name: t.name, ok, out };
+      });
+      const rep = document.getElementById('test-report');
+      if (rep) rep.textContent = 'Tests: ' + results.map(r => `${r.name}:${r.ok?'OK':'FAIL'}`).join(' | ');
+    }
+
+    function runLogicTests(){
+      // Nuevos tests unitarios no invasivos (NO cambian los existentes)
+      const p1 = parseKW('10 kW');
+      const p2 = parseKW('20hp');
+      const tq = estimateTorqueNm(10, 30, 'Continuo');
+      const pr = buildUserPrompt({industria:'X', aplicacion:'Y', potencia:'1 kW', rpmIn:1500, rpmOut:30, servicio:'Intermitente'});
+      console.assert(Math.abs(p1-10)<1e-6, 'parseKW kW');
+      console.assert(Math.abs(p2-14.914)<0.1, 'parseKW hp');
+      console.assert(tq>0, 'estimateTorqueNm>0');
+      console.assert(/Industria: X/.test(pr), 'buildUserPrompt contiene Industria');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => { runFormatTests(); runLogicTests(); });
+  </script>
+
+  <div id="test-report" class="hidden"></div>
+
+  <!-- === Netlify Function (serverless) – specs ===
+       Guardá este archivo en: netlify/functions/specs.js
+       y configurá GOOGLE_API_KEY en Netlify (Site settings → Environment variables) -->
+  <!--
+  // netlify/functions/specs.js
+  export async function handler(event) {
+    try {
+      if (event.httpMethod !== 'POST') {
+        return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) };
+      }
+      const { prompt } = JSON.parse(event.body || '{}');
+      if (!prompt) return { statusCode: 400, body: JSON.stringify({ error: 'Missing prompt' }) };
+
+      const apiKey = process.env.GOOGLE_API_KEY;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+      const payload = { contents: [{ parts: [{ text: prompt }] }], systemInstruction: { parts: [{ text: 'Sos un ingeniero mecánico experto en transmisión de potencia.' }] } };
+      const resp = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+      const data = await resp.json();
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      return { statusCode: 200, body: JSON.stringify({ text }) };
+    } catch (e) {
+      return { statusCode: 500, body: JSON.stringify({ error: 'Server error', detail: String(e) }) };
+    }
+  }
+  -->
+
+  <!-- netlify.toml (colocá en la raíz del proyecto) -->
+  <!--
+  [build]
+    publish = "."
+    functions = "netlify/functions"
+
+  [[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
+  -->
+</body>
+</html>
